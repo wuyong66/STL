@@ -109,13 +109,72 @@ c1.wap(c2)         同上
 
 //assign 操作不适合关联容器和array
 seq.assign(b, e)   使用迭代器b，e替换容器中的元素
+seq.assign(il)     使用列表进行复制
+seq.assign(n, t)   使用n个值为t的元素。
+
+//使用swap()       交换两个容器的值，不对元素进行拷贝工作，所以速度很快，除array以外
+                   统一使用非成员swap(）是一个很好的选择
+vector<string> svec1(10);
+vector<string> svec2(20);
+swap(svec1, svec2);
 -----------------------------------------------------------------------------------------------------------*/
 
+/*------------------------------------------------容器大小操作-----------------------------------------------
+> < == : 比和string字符串的比较一样的，只有容器的元素定义了关系运算符，才可以比较容器之间的大小
+size()     返回容器中元素的个数
+empty()    容器是否为空
+max_size() 该类型容器最大容纳的元素的个数
+           //forward_list不支持size()操作，原因肯定是因为要去手写单向链表一致
+-----------------------------------------------------------------------------------------------------------*/
 
+/*------------------------------------------------顺序容器操作-----------------------------------------------
+//forward_list   有自己专门的insert和emplace,不支持push_back和emplace_back, vector/string不支持push_front
+				 以及emplace_front
+
+c.push_back(t)         在c的尾部创建t或者args创建的元素，返回void
+c.emplace_back(args) 
+
+c.push_front(t)        在c的开头创建t或者args创建的元素，返回void
+c.emplace_front(t)
+
+c.insert(p, n, t)      在迭代器p之前插入n个值为t的元素，返回新添加的第一个元素的迭代器，若n为0，则返回p
+c.insert(p, b, e)      将迭代器b, e指向的元素之前插入到p所指向新添加元素之前，返回新添加第一个元素的迭代器
+//insert 是按顺序向后插入的，比如{0, 1, 2}的begin插入{3，4，5}是{3, 4, 5, 0, 1, 2}
+//向一个vector/string/deque中插入元素会使所有指向容器的迭代器、引用、指针失效。
+//当我们使用一个对象来初始化容器时，或者将元素插入容器中，实际上放入容器的是其对象值的一个拷贝，两者并无关联
+
+//vector和string不支持push_front()操作，而list、forward_list、deque支持push_front()操作;push_front是一种倒序的结果
+//
+-----------------------------------------------------------------------------------------------------------*/
 int main()
 {
-	
-	
+	std::cout << "顺序容器的实验：\n";
+	std::vector<int >int_vec_des = { 0, 1, 2, 3 };
+	std::cout << "原容器内的元素为：\n";
+	for (auto tmp : int_vec_des)
+		std::cout << tmp << std::ends;
+	std::cout << '\n';
+	std::cout << "待插入的元素：\n";
+	std::vector<int >int_vec_res = { 4, 5, 6, 7 };
+	for (auto tmp : int_vec_res)
+		std::cout << tmp << std::ends;
+	std::cout << '\n';
+	std::cout << "插入之后容器为：\n";
+	std::vector<int>::iterator iter = int_vec_des.begin();
+	auto iter1 = int_vec_des.insert(iter, int_vec_res.begin(), int_vec_res.end());
+	for (auto tmp : int_vec_des)
+		std::cout << tmp << std::ends;
+	std::cout << "\n";
+	std::cout << "返回的迭代器指向的元素为";
+	std::cout << *iter1 << std::endl;
+
+	std::cout << "插入列表元素为{7， 8， 9}，插入之后原容器为：\n";
+	int_vec_des.insert(iter1, { 7, 8, 9 });
+	for (auto tmp : int_vec_des)
+		std::cout << tmp << std::ends;
+
+	system("pause");
+
 	return 0;
 }
 
