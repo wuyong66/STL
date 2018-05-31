@@ -158,7 +158,7 @@ c.pop_front()  //删除队头元素，若c为空，则函数未定义
 c.erase(p)     //删除迭代器所指的元素，返回一个指向被删除元素之后的元素的迭代器，若p指向最后一个元素，则返回
                //尾后迭代器，
 c.erase(p, e)  //删除迭代器b和e所指定范围内的元素，返回一个指向最后一个被删除元素之后的元素的迭代器，若e本身也是
-               //最后一个元素，那么也返回尾后迭代器
+               //最后一个元素，那么也返回尾后迭代器,双闭
 
 c.clear()     //删除所有的元素，
 
@@ -202,10 +202,43 @@ string s2 = s.substr(0, 5);      //s2 = hello
 string s3 = s.substr(6);         //s3 = world
 string s4 = s.substr(6, 11);     //s4 = world
 string s5 = s.substr(12);        //抛出一个out_of_range
+
+//除了普通的insert()和erase()操作，string还有以下的重载版本，都是在pos之前插入或者删除，字符串下标是从0开始的
+//string还提供了两个额外的成员append(),replace()，append()是在string末尾加入的一种形式，而replace是调用erase()和
+//insert()的简写形式
+
+s.insert(pos, args)   //在pos之前插入args指定的字符，pos是个下标或者是一个迭代器，接受下标的版本返回一个指向s的
+                        引用,接受迭代器的版本返回指向第一个插入字符的迭代器
+
+s.erase(pos, len)    //删除从pos处开始的len个字符，如果len省略则删除pos开始的所有字符，返回一个指向s的引用
+
+s.replace(range, args)  //删除range内的元素，替换为args的元素，args可以是一个下标加一个长度，或者一对迭代器，返回
+                          返回一个指向s的引用
+s.append(args)          //将args加入到s的尾部，返回一个指向s的引用
+
+s.assign(args)          //将s中的字符替换为args字符，返回一个引用
+
+***************************************************************************************************************
+string的搜索函数：
+(1) s.find(args)          //查找s中第一次出现的位置,并返回子串在主串中第一个字符的下标
+(2) s.rfind(args)         //查找最后一个...
+(3) s.find_first_of(args) //在s中查找args中任何一个字符的第一次出现的位置，
+(4) s.find_last_of(args)  //在s中查找args中任何一个字符最后一次出现的位置。
+(5) s.find_first_not_of(args)   //在s中查找第一个不在args中的字符
+(6) s.find_last_not_of(args)    //查找最后一个不在args中的字符
+
+(1) args必须是以下的形式：
+（c, pos）   从s中位置pos开始查找字符c，pos默认0。
+（s2, pos）  从s中位置pos开始查找字符串s2，pos默认0。
+（cp, pos）  从s中位置pos开始查找cp指向的以空字符结尾的C风格字符串，pos默认为0
+（cp, pos, n）  从s中位置pos开始查找指针cp指向的数组的前n个字符。pos和n无默认值
+
+**************************************************************************************************************
+
 -----------------------------------------------------------------------------------------------------------*/
 
 /*------------------------------------------------额外的string构造方法--------------------------------------
-              给出string vector array list forward_list deque  stack   所支持的操作以及范例
+给出string vector array list forward_list deque stack map multimap set multiset tuple bitset所支持的操作以及范例
 -----------------------------------------------------------------------------------------------------------*/
 
 int main()
@@ -235,6 +268,11 @@ int main()
 	for (auto tmp : int_vec_des)
 		std::cout << tmp << std::ends;
 
+
+	std::cout << "\n--------------------------------------------------------------" << std::endl;
+	std::string str = "abcdef";
+	str.insert(1, "v");
+	std::cout << str << std::endl;
 
 	system("pause");
 
