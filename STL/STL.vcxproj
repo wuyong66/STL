@@ -78,7 +78,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="myArray.cpp" />
+    <ClCompile Include="myDeque.cpp" />
+    <ClCompile Include="myForward_list.cpp" />
+    <ClCompile Include="myList.cpp" />
+    <ClCompile Include="myMap.cpp" />
+    <ClCompile Include="myMultimap.cpp" />
+    <ClCompile Include="myMultiSet.cpp" />
+    <ClCompile Include="mySet.cpp" />
+    <ClCompile Include="myString.cpp" />
+    <ClCompile Include="myUnorder.cpp" />
+    <ClCompile Include="myVector.cpp" />
     <ClCompile Include="STL.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="myString.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

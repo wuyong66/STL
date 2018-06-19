@@ -18,5 +18,43 @@
     <ClCompile Include="STL.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="myString.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="myVector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="myList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="myForward_list.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="myDeque.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="myArray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="myMap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mySet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="myMultimap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="myMultiSet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="myUnorder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="myString.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -309,39 +309,12 @@ pair类型:
 给出string vector array list forward_list deque stack map multimap set multiset tuple bitset所支持的操作以及范例
 -----------------------------------------------------------------------------------------------------------*/
 
+#include "myString.h"
+
 int main()
 {
 
-	std::cout << "顺序容器的实验：\n";
-	std::vector<int >int_vec_des = { 0, 1, 2, 3 };
-	std::cout << "原容器内的元素为：\n";
-	for (auto tmp : int_vec_des)
-		std::cout << tmp << std::ends;
-	std::cout << '\n';
-	std::cout << "待插入的元素：\n";
-	std::vector<int >int_vec_res = { 4, 5, 6, 7 };
-	for (auto tmp : int_vec_res)
-		std::cout << tmp << std::ends;
-	std::cout << '\n';
-	std::cout << "插入之后容器为：\n";
-	std::vector<int>::iterator iter = int_vec_des.begin();
-	auto iter1 = int_vec_des.insert(iter, int_vec_res.begin(), int_vec_res.end());
-	for (auto tmp : int_vec_des)
-		std::cout << tmp << std::ends;
-	std::cout << "\n";
-	std::cout << "返回的迭代器指向的元素为";
-	std::cout << *iter1 << std::endl;
-
-	std::cout << "插入列表元素为{7， 8， 9}，插入之后原容器为：\n";
-	int_vec_des.insert(iter1, { 7, 8, 9 });
-	for (auto tmp : int_vec_des)
-		std::cout << tmp << std::ends;
-
-
-	std::cout << "\n--------------------------------------------------------------" << std::endl;
-	std::string str = "abcdef";
-	str.insert(1, "v");
-	std::cout << str << std::endl;
+	myStringTest();
 
 	system("pause");
 	return 0;
