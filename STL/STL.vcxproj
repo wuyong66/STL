@@ -86,6 +86,7 @@
     <ClCompile Include="myMultimap.cpp" />
     <ClCompile Include="myMultiSet.cpp" />
     <ClCompile Include="mySet.cpp" />
+    <ClCompile Include="myStackAndQueue.cpp" />
     <ClCompile Include="myString.cpp" />
     <ClCompile Include="myUnorder.cpp" />
     <ClCompile Include="myVector.cpp" />
@@ -93,6 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="myString.h" />
+    <ClInclude Include="myVector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

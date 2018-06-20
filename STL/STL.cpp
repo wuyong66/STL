@@ -310,11 +310,13 @@ pair¿‡–Õ:
 -----------------------------------------------------------------------------------------------------------*/
 
 #include "myString.h"
+#include "myVector.h"
 
 int main()
 {
 
 	myStringTest();
+	myVectorTest();
 
 	system("pause");
 	return 0;

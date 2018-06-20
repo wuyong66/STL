@@ -7,6 +7,7 @@
 #include <iostream>
 #include <string>
 #include <string.h>
+#include "myString.h"
 
 
 void myStringTest()
@@ -15,7 +16,7 @@ void myStringTest()
 	std::string str1 = "hello world";
 	std::cout << "the length of str1：" << str1.size() << std::endl;
 	str1.push_back('!');                                 //在尾部添加字符
-	std::cout << "after pushing, str1 is: " << str1 << std::endl;;
+	std::cout << "after pushing, str1 is: " << str1 << std::endl;
 	
 	auto ret = str1.insert(str1.begin() + 5, '@');       //接受迭代器版本返回的是指向插入元素的迭代器
 	std::cout << "after inserting, str1 is : " << str1 << std::endl;
