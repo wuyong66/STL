@@ -26,7 +26,7 @@ void myListTest()
 	}
 	std::cout << '\n';
 
-	//插入操作和其他的一样，在此不再赘述
+											   //插入操作和其他的一样，在此不再赘述
 	auto ret = myList.insert(myList.end(), 9);  
 	std::cout << "after inserting, myList is : " << std::endl;
 	for (auto tmp : myList)
@@ -44,7 +44,7 @@ void myListTest()
 	}
 	std::cout << '\n';
 
-	myList.remove(8);
+	myList.remove(8);                             //删除所有满足等于8的元素
 	std::cout << "after removing, myList is : " << std::endl;
 	for (auto tmp : myList)
 	{
@@ -52,7 +52,7 @@ void myListTest()
 	}
 	std::cout << '\n';
 
-	//remove_if()  //当满足条件时，删除
+	                                               //remove_if()  //当满足条件时，删除
 	myList.remove_if(is_odd);
 	std::cout << "after remove_if(is_odd), myList is : " << std::endl;
 	for (auto tmp : myList)

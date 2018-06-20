@@ -15,7 +15,7 @@ void myVectorTest()
 	std::vector<int> myVec = { 1, 3, 5, 7, 9 };
 	std::vector<int> myVec1 = { 4, 6, 8 };
 	std::cout << "the length of myVec：" << myVec.size() << std::endl;
-	myVec.push_back(0);                                 //在尾部添加字符
+	myVec.push_back(0);                                                                 //在尾部添加字符
 	std::cout << "after pushing, myVec is: "  << std::endl;
 	for (auto tmp : myVec)
 	{
@@ -49,7 +49,7 @@ void myVectorTest()
 		（2）erase(b, e)      //删除迭代器[b, e) 范围内的元素；
 		                      //关于迭代器确定范围都是左闭右开！！！！
 	*/
-	auto ret2 = myVec.erase(myVec.begin() + 1);               //删除单个迭代器指向的元素，
+	auto ret2 = myVec.erase(myVec.begin() + 1);                                 //删除单个迭代器指向的元素，
 	std::cout << "after earsing , myVec is : " << std::endl;
 	for (auto tmp : myVec)
 	{
@@ -65,7 +65,7 @@ void myVectorTest()
 	}
 	std::cout << "返回的迭代器值为：" << *ret3 << std::endl;
 
-	std::swap(myVec, myVec1);
+	std::swap(myVec, myVec1);                                                   //交换两个容器的值，其实实质上并不交换
 	std::cout << "after swapping , myVec is : " << std::endl;
 	for (auto tmp : myVec)
 	{
