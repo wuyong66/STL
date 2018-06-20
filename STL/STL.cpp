@@ -312,6 +312,7 @@ pair¿‡–Õ:
 #include "myString.h"
 #include "myVector.h"
 #include "myList.h"
+#include "myForward_list.h"
 
 int main()
 {
@@ -319,6 +320,8 @@ int main()
 	myStringTest();
 	myVectorTest();
 	myListTest();
+	myForward_listTest();
+
 
 	system("pause");
 	return 0;
