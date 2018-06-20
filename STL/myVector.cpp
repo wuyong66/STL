@@ -6,12 +6,12 @@
 /*
 实现string常见的操作：
 	（1）构造、赋值:
-	（2）基本操作：size(), empty(),  push_back(), insert(), erase(), clear(), swap(), 
+	（2）基本操作：size(), empty(),  push_back(), pop_back(), insert(), erase(), clear(), swap();
 */
 
 void myVectorTest()
 {
-	std::cout << "-----------------------------this is class string demo--------------------------" << std::endl;
+	std::cout << "-----------------------------this is class vector demo--------------------------" << std::endl;
 	std::vector<int> myVec = { 1, 3, 5, 7, 9 };
 	std::vector<int> myVec1 = { 4, 6, 8 };
 	std::cout << "the length of myVec：" << myVec.size() << std::endl;
@@ -71,5 +71,4 @@ void myVectorTest()
 	{
 		std::cout << tmp << ' ';
 	}
-
 }

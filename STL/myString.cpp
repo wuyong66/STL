@@ -1,7 +1,7 @@
 /*
 实现string常见的操作：
 （1）构造、赋值:
-（2）基本操作：size(), empty(),  push_back(), insert(), erase(), clear()
+（2）基本操作：size(), empty(),  push_back(), pop_back(), insert(), erase(), clear();
 （3）string特有操作：substr(), append(), replace(), find()系列函数, compare()
 */
 #include <iostream>
@@ -67,4 +67,6 @@ void myStringTest()
 	auto pos1 = name.find_first_of(numbers);
 	std::cout << "number first at the pos : " << pos1 << " of name" << std::endl;
 
+	if (str1.compare(str2))    
+		std::cout << "str1 > str2" << std::endl;
 }

@@ -159,7 +159,7 @@ c.pop_front()  //删除队头元素，若c为空，则函数未定义
 c.erase(p)     //删除迭代器所指的元素，返回一个指向被删除元素之后的元素的迭代器，若p指向最后一个元素，则返回
                //尾后迭代器，
 c.erase(p, e)  //删除迭代器b和e所指定范围内的元素，返回一个指向最后一个被删除元素之后的元素的迭代器，若e本身也是
-               //最后一个元素，那么也返回尾后迭代器,双闭
+               //最后一个元素，那么也返回尾后迭代器,
 
 c.clear()     //删除所有的元素，
 
@@ -311,12 +311,14 @@ pair类型:
 
 #include "myString.h"
 #include "myVector.h"
+#include "myList.h"
 
 int main()
 {
 
 	myStringTest();
 	myVectorTest();
+	myListTest();
 
 	system("pause");
 	return 0;
