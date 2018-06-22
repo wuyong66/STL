@@ -313,6 +313,7 @@ pair¿‡–Õ:
 #include "myVector.h"
 #include "myList.h"
 #include "myForward_list.h"
+#include "myDeque.h"
 
 int main()
 {
@@ -321,6 +322,7 @@ int main()
 	myVectorTest();
 	myListTest();
 	myForward_listTest();
+	myDequeTest();
 
 
 	system("pause");

@@ -68,5 +68,8 @@
     <ClInclude Include="myForward_list.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="myDeque.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -93,6 +93,7 @@
     <ClCompile Include="STL.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="myDeque.h" />
     <ClInclude Include="myForward_list.h" />
     <ClInclude Include="myList.h" />
     <ClInclude Include="myString.h" />
