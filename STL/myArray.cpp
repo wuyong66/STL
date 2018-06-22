@@ -9,7 +9,7 @@
 */
 void myArrayTest()
 {
-	std::cout << "---------------------------this is class deque demo--------------------------" << std::endl;
+	std::cout << "---------------------------this is class array demo--------------------------" << std::endl;
 	std::array<int, 10 >myArray = { 3, 5 };
 	for (auto tmp : myArray)
 	{

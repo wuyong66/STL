@@ -74,5 +74,8 @@
     <ClInclude Include="myArray.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="myMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

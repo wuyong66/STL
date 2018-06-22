@@ -306,7 +306,7 @@ pair类型:
 
 -----------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------额外的string构造方法--------------------------------------
-给出string vector array list forward_list deque stack map multimap set multiset tuple bitset所支持的操作以及范例
+给出string vector array list forward_list deque queue stack map multimap set multiset tuple bitset所支持的操作以及范例
 -----------------------------------------------------------------------------------------------------------*/
 
 #include "myString.h"
@@ -315,6 +315,7 @@ pair类型:
 #include "myForward_list.h"
 #include "myDeque.h"
 #include "myArray.h"
+#include "myMap.h"
 
 int main()
 {
@@ -325,6 +326,7 @@ int main()
 	myForward_listTest();
 	myDequeTest();
 	myArrayTest();
+	myMapTest();
 
 
 	system("pause");

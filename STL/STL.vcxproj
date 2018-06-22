@@ -97,6 +97,7 @@
     <ClInclude Include="myDeque.h" />
     <ClInclude Include="myForward_list.h" />
     <ClInclude Include="myList.h" />
+    <ClInclude Include="myMap.h" />
     <ClInclude Include="myString.h" />
     <ClInclude Include="myVector.h" />
   </ItemGroup>
