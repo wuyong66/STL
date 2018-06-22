@@ -314,6 +314,7 @@ pair¿‡–Õ:
 #include "myList.h"
 #include "myForward_list.h"
 #include "myDeque.h"
+#include "myArray.h"
 
 int main()
 {
@@ -323,6 +324,7 @@ int main()
 	myListTest();
 	myForward_listTest();
 	myDequeTest();
+	myArrayTest();
 
 
 	system("pause");

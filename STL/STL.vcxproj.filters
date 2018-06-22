@@ -71,5 +71,8 @@
     <ClInclude Include="myDeque.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="myArray.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
