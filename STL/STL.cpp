@@ -316,6 +316,7 @@ pair¿‡–Õ:
 #include "myDeque.h"
 #include "myArray.h"
 #include "myMap.h"
+#include "mySet.h"
 
 int main()
 {
@@ -327,6 +328,8 @@ int main()
 	myDequeTest();
 	myArrayTest();
 	myMapTest();
+	myMapTest();
+	mySetTest();
 
 
 	system("pause");
