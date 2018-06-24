@@ -54,6 +54,9 @@
     <ClCompile Include="myStackAndQueue.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="myAlgorithm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="myString.h">
@@ -78,6 +81,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="mySet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="myAlgorithm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="myStackAndQueue.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

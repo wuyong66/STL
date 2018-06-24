@@ -317,6 +317,8 @@ pair¿‡–Õ:
 #include "myArray.h"
 #include "myMap.h"
 #include "mySet.h"
+#include "myAlgorithm.h"
+#include "myStackAndQueue.h"
 
 int main()
 {
@@ -330,6 +332,15 @@ int main()
 	myMapTest();
 	myMapTest();
 	mySetTest();
+
+
+	myStackTest();
+	myQueueTest();
+
+
+
+
+	myAlgorithmTest();
 
 
 	system("pause");

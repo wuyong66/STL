@@ -78,6 +78,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="myAlgorithm.cpp" />
     <ClCompile Include="myArray.cpp" />
     <ClCompile Include="myDeque.cpp" />
     <ClCompile Include="myForward_list.cpp" />
@@ -93,12 +94,14 @@
     <ClCompile Include="STL.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="myAlgorithm.h" />
     <ClInclude Include="myArray.h" />
     <ClInclude Include="myDeque.h" />
     <ClInclude Include="myForward_list.h" />
     <ClInclude Include="myList.h" />
     <ClInclude Include="myMap.h" />
     <ClInclude Include="mySet.h" />
+    <ClInclude Include="myStackAndQueue.h" />
     <ClInclude Include="myString.h" />
     <ClInclude Include="myVector.h" />
   </ItemGroup>

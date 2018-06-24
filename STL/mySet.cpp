@@ -49,6 +49,6 @@ void mySetTest()
 	printf("a occurred %d times", cnt);
 
 	std::set<std::string>::iterator iter_beg = mySet.lower_bound("a");
-	std::set<std::string>::iterator iter_end = mySet.upper_bound("a");      //给定关键字的范围[lower_bound, upper_bound]
+	std::set<std::string>::iterator iter_end = mySet.upper_bound("a");      //给定关键字的范围[lower_bound, upper_bound)
 
 }
