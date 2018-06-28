@@ -45,9 +45,9 @@ void myMapTest()
 		printf("%s---->%d\n", iter->first.c_str(), iter->second);
 	}
 	/*
-	m.erase(k);                             //删除关键字为k的元素
-	m.erase(p);                             //删除迭代器p指向的元素
-	m.erase(b, e);                          //删除范围内的元素
+		m.erase(k);                             //删除关键字为k的元素
+		m.erase(p);                             //删除迭代器p指向的元素
+		m.erase(b, e);                          //删除范围内的元素
 	*/
 	myMap.erase("word");
 	std::cout << "after erasing, myMap is : \n";
@@ -56,7 +56,7 @@ void myMapTest()
 		printf("%s---->%d\n", iter->first.c_str(), iter->second);
 	}
 
-	unsigned cnt = myMap.count("hello");                                            //返回关键字的值
+	unsigned cnt = myMap.count("hello");                                            //返回关键字的多了
 	printf("hello occurred %d times\n", cnt);
 	std::cout << "find keyword hello : \n";
 	auto ret3 = myMap.find("hello");                                                //返回关键字的迭代器

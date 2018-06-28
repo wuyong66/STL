@@ -333,12 +333,8 @@ int main()
 	myMapTest();
 	mySetTest();
 
-
 	myStackTest();
 	myQueueTest();
-
-
-
 
 	myAlgorithmTest();
 
