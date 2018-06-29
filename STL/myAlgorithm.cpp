@@ -26,10 +26,31 @@
 （4）写容器算法
 		（1）暂不总结；
 
-（5）划分和排序算法
+（5）划分算法
 		（1）is_partitioned(beg, end, unaryPrey)                 //若满足谓词的在前，不满足在后，则返回true, 空也是true
 		（2）partitioned_copy(beg, end, dest1, dest2, unaryPred) //将满足谓词的元素放在dest1中，将不满足拷贝在dest2中，返回一个pair
 																 //,first指向dest1的末尾，second指向dest2的末尾
+
+（6）排序算法
+		（1）sort(beg, end)                                 //给容器排序
+		（2）stable_sort(beg, end, comp)                    //稳定排序
+		（3）is_sorted(beg, end)                            //返回bool，表示是否有序
+		（4）is_sorted_until(beg, end)                      //返回最长有序子序列的尾后迭代器
+
+		（5）remove(beg, end, val)                          //删除元素val，返回指向删除最后一个元素的迭代器
+		（6）remove_if(beg, end, unaryPred)                 //删除满足谓词的元素，返回指向删除最后一个元素的迭代器
+		（7）unique(beg, end, val)                          //重排元素，对于重复元素重新排在最大不重复子序列的尾后迭代器，一般sort之后
+		                                                    //使用该元素将重复元素放在最大不重复子序列的后面，然后可以使用erase删除
+		（8）reverse(beg, end)                              //翻转序列
+
+（7）最大最小值算法
+		（1）min(val1, val2)
+		（2）max(val1, val2)
+
+		（3）min_element(beg, end)                         //返回指向最小值的迭代器
+		（4）max_element(beg, end)                         //返回指向最大值的迭代器
+		
+		（5）minmax_element(beg, end)                      //返回pair 指向（min, max）的两个迭代器
 */
 
 void myAlgorithmTest()
