@@ -51,6 +51,9 @@
 		（4）max_element(beg, end)                         //返回指向最大值的迭代器
 		
 		（5）minmax_element(beg, end)                      //返回pair 指向（min, max）的两个迭代器
+
+（8）数值算法
+		（1）accumulate(beg, end, init)                    //求容器和，init设定为初值，返回和
 */
 
 void myAlgorithmTest()
