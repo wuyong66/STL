@@ -64,7 +64,7 @@ Description:本例程提供了C++的STL常用数据结构及其算法的使用范例，为面试笔试编程题
 6）获取迭代器
 	1. c.bengin() c.end()
 	2. c.cbegin(), c.cend()
-反向迭代器的成员
+	反向迭代器的成员
 	reverse_iterator
 	const_reverse_interator
 	3. c.rbegin(), c.rend()
@@ -89,7 +89,7 @@ C c1 = c2    同上
 C c{a, b, c,...}    对于array，列表中的元素必须少于array的大小
 C c = {a, b, c,...}
 
-C c(b, e)    c初始化为迭代器b,e指定范围中元素的拷贝
+C c(b, e)           c初始化为迭代器b,e指定范围中元素的拷贝
 
 //只有顺序容器才支持的操作：
 C seq(n)    seq包含n个元素,这些元素进行了值初始化
@@ -115,8 +115,8 @@ seq.assign(n, t)   使用n个值为t的元素。
 //使用swap()       交换两个容器的值，不对元素进行拷贝工作，所以速度很快，除array以外
                    统一使用非成员swap(）是一个很好的选择
 vector<string> svec1(10);
-vector<string> svec2(20);
-swap(svec1, svec2);
+vector<string> svec2(20);        
+swap(svec1, svec2);         
 -----------------------------------------------------------------------------------------------------------*/
 
 /*------------------------------------------------容器大小操作-----------------------------------------------
@@ -244,7 +244,7 @@ compare函数：这与C标准库，提供的strcmp很相似；
 
 /*------------------------------------------------容器适配器-------------------------------------------------
 //除了string vector list forword_list deque array等顺序容器之外，还定义了queue stack priority_queue等适配器
-（1）stack  //栈，先入后出结构，
+（1）stack      //栈，先入后出结构，
 	（1）pop()
 	（2）top()
 	（3）push()
@@ -319,10 +319,10 @@ pair类型:
 #include "mySet.h"
 #include "myAlgorithm.h"
 #include "myStackAndQueue.h"
+#include "tupleAndBitset.h"
 
 int main()
 {
-
 	myStringTest();
 	myVectorTest();
 	myListTest();
@@ -335,7 +335,7 @@ int main()
 
 	myStackTest();
 	myQueueTest();
-
+	tupleAndBitsetTest();
 	myAlgorithmTest();
 
 

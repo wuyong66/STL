@@ -16,7 +16,7 @@
 
 （2）其他只读算法
 		（1）for_each(beg, end, unaryOp)   //对每个元素使用可调用对象
-		（2）equal(beg1, end1, beg2)      //如果输入序列每个元素都和beg2开始IDE序列相等，则返回true
+		（2）equal(beg1, end1, beg2)      //如果输入序列每个元素都和beg2开始的序列相等，则返回true
 
 （3）二分搜索算法
 		（1）lower_bound(beg, end, val)    //返回指向第一个小于等于val的迭代器
@@ -56,10 +56,9 @@
 		（1）accumulate(beg, end, init)                    //求容器和，init设定为初值，返回和
 */
 
+
 void myAlgorithmTest()
 {
 	std::cout << "----------------------------this is class Algorithm demo------------------------" << std::endl;
-
-
 
 }

@@ -7,7 +7,7 @@
 	//特点：支持随机访问，可以在内部进行插入和删除操作，在两端插入删除性能最好，
 	（1）创建：
 	（2）通用操作：push_back(), pop_back(), insert(), erase(), clear(), swap(), empty(), back(), front(), at(), []
-	（3）特有操作：push_front(), pop_front(), 
+	（3）特有操作：push_front(), pop_front()
 */
 void myDequeTest()
 {
